@@ -1,5 +1,4 @@
 
-
                  Tiny SHell - An open-source UNIX backdoor
 
 
@@ -71,6 +70,11 @@
         However, you may choose not to store the real (valid) key in
         the client, which will then ask for a password when it starts.
 
-	* Notes regarding SCTP version:
+    * Notes regarding SCTP version:
 	Only tested on Archlinux so far, expect it to fail hideously
 	on anything else.
+	Is a fairly ugly hack, has some compiling errors which I plan to
+	eventually track down and fix.
+	Security of the  backdoor file (tsh) - i.e. the password being in
+	cleartext is to be fixed soonish by only storing a hashed password.
+	Testing on hpux, *bsd, etc once I have access to such boxes. 
